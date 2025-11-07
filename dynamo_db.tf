@@ -21,14 +21,6 @@ resource "aws_dynamodb_table_item" "count_item" {
 }
 ITEM
 }
-/*
-resource "aws_dynamodb_resource_policy" "visitors_db_policy" {
-  resource_arn = aws_dynamodb_table.visitors_db.arn
-  policy       = data.aws_iam_policy_document.visitors_db_policy_document.json
-  depends_on = [
-    aws_iam_role.lambda_execution_role
-  ]
-}*/
 
 data "aws_iam_policy_document" "visitors_db_policy_document" {
   statement {
