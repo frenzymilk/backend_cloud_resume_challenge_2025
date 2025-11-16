@@ -24,3 +24,10 @@ Here’s what I delivered:
 - Fine-grained IAM policies for least-privilege access
 - Clear separation between users, roles, and service permissions
 - HTTPS enforced and no public backend access
+
+## Description
+This repository contains the Terraform configuration files in order to deploy your AWS infrastructure according to the illustration provided earlier.
+Edit a local `terraform.tfvars` file to customize the deployment. Provide the data for the following variables:
+- The AWS region where you would like the deployment to be made `aws_region`, e.g. "us-east-1"
+- The name of the AWS profile with the correct authorizations and permissions to deploy the architecture `aws_profile`
+- The name of the domain created in Route53 `domain_name`, e.g. "example.com"
